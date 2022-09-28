@@ -39,7 +39,33 @@
 //     itam[i].style.backgroundColor='#00FF00';
 // }
 // querySalector
- var header=document.querySelector('#main-header');
- header.style.borderBottom='solid 5px #ccc';
- 
+//  var header=document.querySelector('#main-header');
+//   header.style.borderBottom='solid 5px #ccc';
+//    var input=document.querySelector('input');
+//   input.value='Hello'
+  
+// var submit=document.querySelector('input[type="submit"]');
+//   submit.value='Send'
+// var item = document.querySelector('.list-group-item');
+//   item.style.color='red'
+//   var lastitem = document.querySelector('.list-group-item:last-child');
+//   lastitem.style.color='blue'
+//   var seconditem = document.querySelector('.list-group-item:nth-child(2)');
+//   seconditem.style.color='pink'
+
+  //Queary Salectorall
+  var titles = document.querySelectorAll('.title');
+//   console.log(titles);
+  titles[0].textContent='hello';
+  var odd=document.querySelectorAll('li:nth-child(odd)');
+  for(var i=0;i<odd.length;i++){
+    odd[i].style.backgroundColor='red';
+  }
+
+  var even=document.querySelectorAll('li:nth-child(even)');
+  for(var i=0;i<odd.length;i++){
+    even[i].style.backgroundColor='#ccc';
+  }
+
+
 
