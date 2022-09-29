@@ -54,18 +54,92 @@
 //   seconditem.style.color='pink'
 
   //Queary Salectorall
-  var titles = document.querySelectorAll('.title');
+  //var titles = document.querySelectorAll('.title');
 //   console.log(titles);
-  titles[0].textContent='hello';
-  var odd=document.querySelectorAll('li:nth-child(odd)');
-  for(var i=0;i<odd.length;i++){
-    odd[i].style.backgroundColor='red';
-  }
+//   titles[0].textContent='hello';
+//   var odd=document.querySelectorAll('li:nth-child(odd)');
+//   for(var i=0;i<odd.length;i++){
+//     odd[i].style.backgroundColor='red';
+//   }
 
-  var even=document.querySelectorAll('li:nth-child(even)');
-  for(var i=0;i<odd.length;i++){
-    even[i].style.backgroundColor='#ccc';
-  }
+//   var even=document.querySelectorAll('li:nth-child(even)');
+//   for(var i=0;i<odd.length;i++){
+//     even[i].style.backgroundColor='#ccc';
+//   }
 
+
+ //Traversing the node
+
+ //var itemlist=document.querySelector('#items');
+// //parenet mode
+// // console.log(itemlist.parentNode);
+// // itemlist.parentNode.style.backgroundColor ='#ccc'
+// // console.log(itemlist.parentNode.parentNode.parentNode);
+
+
+// parent Element
+// console.log(itemlist.parentElement);
+//  itemlist.parentElement.style.backgroundColor ='#ccc'
+//  console.log(itemlist.parentElement.parentElement.parentElement);
+//child node
+
+// console.log(itemlist.childNodes);
+// // itemlist.childNodes.style.backgroundColor ='#ccc'
+//  console.log(itemlist.childNodes.childNodes);
+
+// console.log(itemlist.children);
+// console.log(itemlist.children[1]);
+// itemlist.children[1].style.backgroundColor='yellow';
+
+// //firstchild
+// console.log(itemlist.firstChild);
+// //first eliment child
+// console.log(itemlist.firstElementChild);
+// itemlist.firstElementChild.textContent='hello';
+// //lostelimentchild
+
+// //lastchild
+// console.log(itemlist.lastChild);
+// //;last eliment child
+// console.log(itemlist.firstElementChild);
+// itemlist.lastElementChild.textContent='hello';
+
+
+
+// createchild
+
+// nextsibling
+
+
+// nextelementsibling
+// console.log(itemlist.nextElementSibling); // in html code we not writ ane span or nextsiling 
+// // previoussibling
+// console.log(itemlist.previousSibling);
+// // previouselementsibling
+// console.log(itemlist.previousElementSibling);
+// itemlist.previousElementSibling.style.color='red'
+
+
+// createelement
+//create a div
+ var newDiv = document.createElement('div');
+
+ //add class
+ newDiv.className='hello';
+ //add id
+
+ newDiv.id='hello1';
+ console.log(newDiv);
+//setAttribute
+//add att
+newDiv.setAttribute('title','hellodiv');
+
+// createtesxtnode
+var newDivText=document.createTextNode('hello world');
+// 
+
+
+// appendchild
+newDiv.appendChild(newDivText);
 
 
